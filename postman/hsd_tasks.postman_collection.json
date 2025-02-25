@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "fb385461-8890-4e57-9a6c-d548c5bed76c",
+		"name": "HSD Tasks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "9965333"
+	},
+	"item": [
+		{
+			"name": "GET State",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "POST Task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Tierarzt Besuch\",\r\n    \"description\": \"Katze zur Impfung bringen - 12. Juni 2025 um 11 Uhr\",\r\n    \"completed\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/tasks"
+			},
+			"response": []
+		},
+		{
+			"name": "GET Tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/tasks"
+			},
+			"response": []
+		},
+		{
+			"name": "GET Task",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Task",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Task",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:3000/tasks/1"
+			},
+			"response": []
+		}
+	]
+}
