@@ -10,7 +10,8 @@
 			"name": "GET State",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": "localhost:3000/state"
 			},
 			"response": []
 		},
@@ -21,7 +22,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"Tierarzt Besuch\",\r\n    \"description\": \"Katze zur Impfung bringen - 12. Juni 2025 um 11 Uhr\",\r\n    \"completed\": false\r\n}",
+					"raw": "{\r\n    \"title\": \"Tierarzt Besuch\",\r\n    \"description\": \"Katze zur Impfung bringen - 12. Juni 2025 um 17 Uhr\",\r\n    \"completed\": false\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -45,15 +46,26 @@
 			"name": "GET Task",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": "localhost:3000/tasks/1"
 			},
 			"response": []
 		},
 		{
 			"name": "PUT Task",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Tierarzt Besuch\",\r\n    \"description\": \"Katze zur Impfung bringen - 12. Juni 2025 um 13 Uhr\",\r\n    \"completed\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/tasks/1"
 			},
 			"response": []
 		},
