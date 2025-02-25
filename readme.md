@@ -69,7 +69,7 @@ Löscht die Aufgabe mit der ID :id.
 
 #### Erstellt eine neue Aufgabe
 ```
-curl --location 'localhost:3000/tasks' \
+curl 'localhost:3000/tasks' \
 --header 'Content-Type: application/json' \
 --data '{
     "title": "Tierarzt Besuch",
@@ -80,17 +80,17 @@ curl --location 'localhost:3000/tasks' \
 
 #### Liefert alle Aufgaben
 ```
-curl --location 'localhost:3000/tasks'
+curl 'localhost:3000/tasks'
 ```
 
 #### Liefert die Aufgabe mit der ID 1
 ```
-curl --location 'localhost:3000/tasks/1'
+curl 'localhost:3000/tasks/1'
 ```
 
 #### Aktualisiert die Aufgabe mit der ID 1
 ```
-curl --location --request PUT 'localhost:3000/tasks/1' \
+curl --request PUT 'localhost:3000/tasks/1' \
 --header 'Content-Type: application/json' \
 --data '{
     "title": "Tierarzt Besuch",
@@ -101,7 +101,7 @@ curl --location --request PUT 'localhost:3000/tasks/1' \
 
 #### Löscht die Aufgabe mit der ID 1
 ```
-curl --location --request DELETE 'localhost:3000/tasks/1'
+curl --request DELETE 'localhost:3000/tasks/1'
 ```
 
 ### Postman
