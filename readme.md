@@ -12,7 +12,8 @@ wird als Memory-Tabelle erstellt.
 
 ## Installation
 
-Für die Installation wird node.js mindestens in der Version 22.5.0 benötigt.
+Für die Installation wird node.js mindestens in der Version 22.5.0 benötigt. Für die Entwicklung
+wurde node.js in der Version 22.14.0 verwendet und getestet.
 
 Als REST-Framework habe ich Express verwendet. Es steht als Abhängigkeit in der package.json. Diese können mit
 dem Node Package Manager installiert werden:
